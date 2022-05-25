@@ -34,13 +34,15 @@ class User extends Component{
     }
     
     render(){
+        let Heading = "Customer List";
         /** Destructuring **/
         /** Extract variable with values **/
         let {users}=this.state;
         console.log(users);
         return(
             <div>
-                <h1>Customers List</h1>
+                <h1>{Heading}</h1>
+                <hr/>
                 <div className="search">
                     <input type="text" name="search" placeholder="Enter name to search" onChange={this.inputHandle.bind(this)}></input>
                     <button onClick={this.search.bind(this)}>Search</button>
