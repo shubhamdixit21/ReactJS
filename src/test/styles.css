@@ -1,0 +1,16 @@
+.tabledata td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+tr:hover{
+    background:indigo;
+    color:white;
+}
+tr:nth-child(even){
+    color:black;
+    background: rgb(241, 241, 82);
+}
+tr:nth-child(odd){
+    color:black;
+    background: rgb(183, 250, 157);
+}
