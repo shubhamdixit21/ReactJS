@@ -48,8 +48,8 @@ class User extends Component{
         }
         console.log(isEmpty);
         return(
-            <div>
-                <h1>{Heading}</h1>
+            <div style={{background:"linear-gradient(to right,blue ,indigo)"}}>
+                <h1 style={{textAlign:'center',color:'#fff'}}>{Heading}</h1>
                 <hr/>
                 <div className="search">
                     <input type="text" name="search" placeholder="Enter name to search" onChange={this.inputHandle.bind(this)}></input>
@@ -57,6 +57,7 @@ class User extends Component{
                 </div>
                 {result}
             </div>
+            
         )
     }
 }
